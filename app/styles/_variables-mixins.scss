@@ -1,0 +1,71 @@
+.black  {background-color: black;}
+.white  {background-color: white;}
+.orange {background-color: orange;}
+.blue   {background-color: blue;}
+.red    {background-color: red;}
+.green  {background-color: green;}
+.pink   {background-color: pink;}
+.plum   {background-color: plum;}
+.gray   {background-color: gray;}
+
+:root {
+    --off-white:    oklch(98% 0 250);
+    --White30:      oklch(100% 0 0 / 0.3);
+    --White70:      oklch(100% 0 0 / 0.7);
+}
+
+
+/* Colors */
+$amber:        oklch(75% 0.18 95);
+$terracotta:   oklch(58.17% 0.1779 20.78);
+$plum:         oklch(43.80% 0.1599 337.83);
+$plum-dark:    oklch(33.80% 0.1599 337.83);
+$charcoal:     oklch(25% 0.02 250);
+$off-white:    oklch(98% 0 250);
+$stone:        oklch(70% 0.02 250);
+
+$cloudy:       oklch(96.42% 0 0);
+$dirtyWhite:   oklch(95.81% 0 0);
+$grayLite:     oklch(93.97% 0 0);
+$rainy:        oklch(90.37% 0 0);
+$rainstorm:    oklch(84.52% 0 0);
+$stormy:       oklch(68.30% 0 0);
+$tornado:      oklch(51.03% 0 0);
+$hurricane:	   oklch(38.29% 0 0);
+$twilight:     oklch(32.11% 0 0);
+$White30:      oklch(100% 0 0 / 0.3);
+$White70:      oklch(100% 0 0 / 0.7);
+$black30:      oklch(0% 0 0 / 0.3);
+    
+$graySoft:     oklch(73.56% 0.0011 17.18);
+$grayDark:     oklch(33.29% 0 0);
+$grayBlack:    oklch(28.91% 0 0);
+
+/* Semantic class */
+$cta:            $amber;
+$title:          $terracotta;
+$subTitle:       $plum;
+$mainText:       $charcoal;
+$secondaryText:  $stone;
+/* Linear-Gradient */
+$gradient-0:     $terracotta;
+$gradient-100:   $plum;
+
+
+@mixin lato($font-weight: 400, $font-style: normal) {    
+    font-family: "Lato", sans-serif;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+@mixin EB-Garamond($font-weight: 700, $font-style: normal) {    
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+@mixin button() {    
+    color: $off-white;
+    background-color: $cta;
+    border-radius: 0.375rem;
+    border: 0;
+}
